@@ -389,6 +389,10 @@ textarea {
   line-height: inherit;
 }
 
+li {
+  padding: 5px 0;
+}
+
 button,
 select {
   text-transform: none;
@@ -3804,6 +3808,12 @@ fieldset:disabled .btn {
   .collapsing.collapse-horizontal {
     transition: none;
   }
+}
+
+.subtitle {
+  font-size: 24px;
+  text-indent: 1rem;
+  font-weight: 600;
 }
 
 .dropup,
@@ -11820,35 +11830,14 @@ section.resume-section .resume-section-content {
   }
 }
 /* ----------- portfolio -------------- */
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Ubuntu|Roboto:400,700);
-
-/*html, body{
-  height: 100%;
-}*/
-
-body{
-  font-family: "Ubuntu", sans-serif;
-}
-
 a.anchor {
-    display: block;
-    position: relative;
-    top: -50px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
 }
 
-.navbar-brand{
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
-  font-size: 2em;
-}
-
-.navbar li{
-  text-transform: capitalize;
-}
-
-#splash{
-  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/home.jpg);
+#splash {
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -11857,79 +11846,84 @@ a.anchor {
   padding-bottom: 50px;
   color: #fff;
   font-size: 3em;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-               0px 8px 13px rgba(0,0,0,0.5),
-               0px 18px 23px rgba(0,0,0,0.1);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.5),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-  #splash h1{
-    font-size: 2em;
-  }
+#splash h1 {
+  font-size: 2em;
+}
 
-  #splash a{
-    color: #fff;
-  }
+#splash a {
+  color: #fff;
+}
 
-  #splash a:hover{
-    color: #e7e7e7;
-  }
+#splash a:hover {
+  color: #e7e7e7;
+}
 
-#portfolio{
+#portfolio {
   height: 100%;
   padding-bottom: 50px;
   color: #fff;
 }
 
-  #portfolio h1{
-    font-size: 5em;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                 0px 8px 13px rgba(0,0,0,0.5),
-                 0px 18px 23px rgba(0,0,0,0.1);
-  }
+#portfolio h1 {
+  font-size: 5em;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.5),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
 
-.thumbnail{
+.thumbnail {
   position: relative;
-  min-height: 400px;
+  min-height: 475px;
   min-width: 100%;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.175);
 }
 
-  .thumbnail img{
-    min-height: 220px;
-    width: 100%;
-  }
+.thumbnail img {
+  min-height: 250px;
+  width: 100%;
+}
 
-.thumbnail-hover{
+.tag {
+  position: absolute;
+  left: 22%;
+  bottom: 10px;
+  font-size: 18px;
+}
+
+.thumbnail-hover {
   position: absolute;
   top: 2px;
   left: 2px;
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition:2s;
+  transition: 2s;
 }
 
-    .thumbnail-hover:hover{
-    top: 2px;
-    left: 2px;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.8);
-    margin: 0 auto;
-    transition:.5s;
-    opacity: 1;
-    padding-top: 37%;
-    border-radius: 5px;
-  }
+.thumbnail-hover:hover {
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  transition: 0.5s;
+  opacity: 1;
+  padding-top: 37%;
+  border-radius: 5px;
+}
 
-  .thumbnail-hover i{
-    text-decoration: none;
-  }
-  
-  .fa-eye {
-    color: #798dc6 !important;
-  }
+.thumbnail-hover i {
+  text-decoration: none;
+}
+
+.fa-eye {
+  color: #798dc6 !important;
+}
 
 .caption {
   padding: 20px 10px;
@@ -11944,7 +11938,19 @@ a.anchor {
   border: 2px solid rgba(154, 162, 237, 0.5);
 }
 
-  .badge_style {
-    color: #fff;
-    background-color: rgba(17, 78, 96, 0.5);
-  }
+.badge_style {
+  color: #fff;
+  background-color: rgba(17, 78, 96, 0.5);
+}
+
+.flex-grow-1 .intro {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.frontend,
+.backend {
+  color: #000;
+}
